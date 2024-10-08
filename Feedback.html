@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+7
+
+<title>Restaurant Website</title>
+<style>
+/* Basic styling */
+body {
+font-family: Arial, sans-serif;
+
+margin: 0;
+padding: 0;
+background-color: #f8f8f8;
+
+}
+header {
+color: #f9bf00;
+padding: 10px;
+text-align: center;
+position: relative;
+z-index: 1;
+}
+nav {
+padding: 10px;
+text-align: center;
+position: relative;
+z-index: 1;
+}
+nav a {
+color: #f4d108;
+text-decoration: none;
+padding: 10px 20px;
+margin: 0 5px;
+border-radius: 5px;
+}
+nav a:hover {
+background-color: #e6b9b9;
+
+}
+section {
+padding: 20px;
+position: relative;
+z-index: 1;
+}
+footer {
+background-color: #f7dadabc;
+
+color: #fff;
+text-align: center;
+padding: 10px;
+position: fixed;
+bottom: 0;
+
+
+
+width: 100%;
+z-index: 1;
+}
+/* Additional Animations */
+.fade
+-in {
+opacity: 0;
+animation: fadeIn ease
+-in 1;
+
+animation-fill-mode: forwards;
+
+animation-duration: 1s;
+
+}
+@keyframes fadeIn {
+from {
+opacity: 0;
+}
+to {
+opacity: 1;
+}
+}
+.slide
+-in
+-left {
+
+transform: translateX(
+-100%);
+animation: slideInLeft ease
+-in 1;
+
+animation-fill-mode: forwards;
+
+animation-duration: 1s;
+
+}
+@keyframes slideInLeft {
+from {
+transform: translateX(
+-100%);
+
+}
+to {
+transform: translateX(0);
+}
+}
+.bounce {
+animation: bounce ease
+-out 1;
+
+animation-fill-mode: forwards;
+
+animation-duration: 1s;
+
+}
+@keyframes bounce {
+0%, 20%, 50%, 80%, 100% {
+
+
+
+transform: translateY(0);
+}40% {
+transform:translateY(-30px);
+}
+60% {
+transform:translateY(-15px);
+}
+}
+main{
+margin: 50px 600px;
+font-size: x-large;
+font-family:monospace;
+}
+main>h2{
+color: #ede8c9;
+}
+#feedbackText{
+margin-top: 50px;
+padding: 80px;
+border-radius: 20px;
+color: #f4d108;
+}
+.b1{
+padding: 5px 20px;
+text-align: center;
+border-radius: 5px;
+border: none;
+background-color: rgb(232, 235, 230);
+margin-left: 5px;
+color: rgb(33, 29, 29);
+box-shadow:0 6px 10px 0 rgb(12, 91, 47,0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.b1:hover{
+padding: 4px 15px;
+transition: .5s;
+margin-left: 10px;
+}
+</style>
+</head>
+<body style="background-image:url(https://images.unsplash.com/photo-1518188770546-efd25d4ca263?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+;background-size: cover;">
+<div class="abstract-background">
+<div class="abstract-shape" style="top: 20%; left: 10%;"></div>
+<div class="abstract-shape" style="top: 50%; left: 30%;"></div>
+<div class="abstract-shape" style="top: 80%; left: 70%;"></div>
+<div class="abstract-shape" style="top: 30%; left: 80%;"></div>
+</div>
+<header class="fade-in">
+<h1 class="rotate">Delicious Restaurant</h1>
+</header>
+<nav class="slide-in-left">
+<a href="Home.html">Home</a>
+<a href="Menu.html">Menu</a>
+<a href="about us.html">About Us</a>
+<a href="Contact.html">Contact</a>
+<a href="Feedback">Feedback</a>
+</nav>
+<main>
+<h2>Leave your feedback </h2>
+<form action="submit_feedback.php" method="post">
+<textarea name="feedback" id="feedbackText" placeholder="Enter your
+feedback"></textarea><br><br>
+<button type="submit" class="b1" >Submit</button>
+</form>
+</main>
+</body>
+</html>

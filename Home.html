@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurant Website</title>
+<style>
+@import
+url('https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&display=swap');
+/* Basic styling */
+.md{
+color: #eee09d;
+margin-left: 380px;
+background-color: #ffffff1b;
+margin-top: 100px;
+font-family: "Briem Hand", cursive;
+font-size: larger;
+margin-right: 300px;
+}
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f8f8f8;
+}
+header {
+color: #f9bf00;
+padding: 10px;
+text-align: center;
+position: relative;
+z-index: 1;
+}
+nav {
+padding: 10px;
+text-align: center;
+position: relative;
+z-index: 1;
+}
+nav a {
+color: #f4d108;
+
+
+
+text-decoration: none
+;
+padding: 10px 20px
+;
+
+margin:
+0 5px
+;
+border-radius: 5px
+;
+
+}
+nav a:hover
+{
+background-color: #555
+;
+
+}
+section
+{
+padding: 20px
+;
+position: relative
+;
+
+z-index:
+1
+;
+
+}
+footer
+{
+background-color: #333
+;
+
+color: #fff;
+text-align: center
+;
+padding: 10px
+;
+position: fixed
+;
+bottom:
+0
+;
+width: 100%
+;
+
+z-index:
+1
+;
+
+}
+/* Additional Animations */
+.fade
+-in
+{
+opacity:
+0
+;
+animation: fadeIn ease
+-in
+1
+;
+
+animation-fill-mode: forwards
+;
+
+animation-duration: 1s
+;
+
+}
+@keyframes fadeIn
+{
+
+from {
+opacity:
+0
+;
+
+}
+to {
+opacity:
+1
+;
+
+}
+}
+.slide
+-in
+-left
+{
+transform: translateX
+(
+-100%);
+animation: slideInLeft ease
+-in
+1
+;
+
+animation-fill-mode: forwards
+;
+
+
+
+animation-duration: 1s;
+}
+@keyframes slideInLeft {
+from {
+transform: translateX(-100%);
+}
+to {
+transform: translateX(0);
+}
+}
+.bounce {
+animation: bounce ease-out 1;
+animation-fill-mode: forwards;
+animation-duration: 1s;
+}
+@keyframes bounce {
+0%, 20%, 50%, 80%, 100% {
+transform: translateY(0);
+}
+40% {
+transform: translateY(-30px);
+}
+60% {
+transform: translateY(-15px);
+}
+}
+
+</style>
+</head>
+<body style="background-image:url(https://images.unsplash.com/photo-1518188770546-efd25d4ca263?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+
+;background-size: cover;">
+<div class="abstract-background">
+<div class="abstract-shape" style="top: 20%; left: 10%;"></div>
+<div class="abstract-shape" style="top: 50%; left: 30%;"></div>
+<div class="abstract-shape" style="top: 80%; left: 70%;"></div>
+<div class="abstract-shape" style="top: 30%; left: 80%;"></div>
+</div>
+<header class="fade-in">
+
+7
+
+<h1 class="rotate">Delicious Restaurant</h1>
+</header>
+<nav class="slide-in-left">
+<a href="#home">Home</a>
+<a href="Menu.html">Menu</a>
+<a href="about us.html">About Us</a>
+<a href="Contact.html">Contact</a>
+<a href="Feedback.html">Feedback</a>
+</nav>
+<DIV class="md">
+<h1> WELCOME TO DELICIOUS RESTURANT</h1>
+<p>"Welcome to [Restaurant Name]! Indulge in an exquisite culinary journey crafted just for
+you.<br>
+Whether you're seeking a cozy brunch spot, an elegant dinner affair, or simply craving culin<br>
+ary delights, our doors are open to elevate your dining experience. Explore our menu,steeped
+<br>
+in flavors and inspired by the freshest ingredients, meticulously prepared to tantalize your <br>
+taste buds.Join us and savor the moments of culinary delight in every bite. Your gastronomic<br>
+adventure starts here."
+</p>
+</DIV>
+<footer class="fade-in">
+<p>&copy; 2024 Delicious Restaurant. All rights reserved.</p>
+</footer>
+</body>
+</html>
